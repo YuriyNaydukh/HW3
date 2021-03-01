@@ -174,7 +174,7 @@ print(lst_new)
 # list_B = [5, 6, 7]
 list_A = [2, 3, 4]
 list_B = [5, 6, 7]
-list_C = list(map(lambda x, y: x * y, list_A, list_B))
+list_C = list(map(lambda x, y: x ** y, list_A, list_B))
 print(list_C)
 
 # 24. Use reduce and lambda to compute the numbers of a lst_to_sort.
@@ -194,8 +194,8 @@ print(new_list)
 # b = range(-10, 10), use the function filter to return only negative numbers.
 old_list = range(-10, 10)
 def foo(b):
-    if b >= 0:
-        return True
+    if b < 0:
+        return b
     else:
         return False
 new_list_1 = list(filter(foo, old_list))
