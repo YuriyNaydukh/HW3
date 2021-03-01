@@ -36,8 +36,7 @@ print('Anna has {red} apples and {big} peaches'. format(red = 2, big = 7))
 
 
 # 8. With indicators of field size (5 chars for the first and 3 for the second).
-print('Anna has {0: 5} apples and {0: 3} peaches'. format(5, 3))
-
+print('Anna has {0:0} apples and {2:0} peaches'. format(5, 4, 3))
 
 # 9. With f-strings and variables.
 red = "sour"
