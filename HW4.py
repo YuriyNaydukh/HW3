@@ -80,7 +80,6 @@ class Wolf:
 
 bear = Bear()
 wolf = Wolf()
-animal = [Bear(), Wolf()]
 
 for animal in (bear, wolf):
     animal.make_sound()
@@ -99,7 +98,7 @@ class City:
         if population > 1500:
             return instance
         else:
-           print('Your city is too small')
+           return ('Your city is too small')
 
 
 # 9. Override a printable string representation of the City class and return:
