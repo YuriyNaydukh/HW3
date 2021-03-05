@@ -17,8 +17,6 @@ vehicle.print_speed()
 class Bus(Vehicle):
     def __init__(self, max_speed, mileage, seating_capacity):
         self.seating_capacity = seating_capacity
-        self.max_speed = max_speed
-        self.mileage = mileage
         super().__init__(max_speed, mileage)
 
     def capacity(self):
@@ -68,14 +66,12 @@ class SchoolBus(Bus, School):
 class Bear:
 
     def make_sound(self):
-        pass
         print('arrr')
 
 
 class Wolf:
 
     def make_sound(self):
-        pass
         print('auuu')
 
 bear = Bear()
