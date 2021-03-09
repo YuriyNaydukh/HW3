@@ -110,10 +110,11 @@ print(pasta_3.ingredients)
 #         concert = Concert()
 #         concert.visitors_count = 1000
 #         print(concert.visitors_count)  # 50
+
 #     """
 class Concert:
     max_visitor_num = 0
-    def __init__(self, visitors_count=0):
+    def __init__(self, visitors_count = 0):
         self._visitors_count = visitors_count
 
     @property
@@ -220,11 +221,17 @@ print(person.age)
 #         self.id = id
 #         self.name = name
 class Student:
+
     def __init__(self, id, name):
         self.id = id
         self.name = name
+
+    email = 'ocipic@,gk'
 student = Student(21512, 'Yan')
-print(f'{student.name} email is: ', getattr(student, 'student_email', 'ocipic@,gk'))
+getattr(student, 'email')
+student_email = 'email'
+print(f'{student.name} email is: ', getattr(student, "student_email", 'ocipic@,gk'))
+print(student.email)
 
 
 
