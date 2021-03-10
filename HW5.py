@@ -115,7 +115,7 @@ print(pasta_3.ingredients)
 class Concert:
     max_visitor_num = 0
     def __init__(self, visitors_count = 0):
-        self._visitors_count = visitors_count
+        self.visitors_count = visitors_count
 
     @property
     def visitors_count(self):
